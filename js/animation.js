@@ -17,11 +17,12 @@ $(window).ready(function () {
       typingIdx++;
     } else {
       clearInterval(tyInt); //끝나면 반복종료
+      const enterImg = document.querySelector(".enterimg");
+      enterImg.style.opacity = 1;
     }
   }
 });
 
-setTimeout(function () {
-  const enterImg = document.querySelector(".enterimg");
-  enterImg.style.opacity = 1;
-}, 4000);
+$(".enterimg").click(function () {
+  $(".enter-wrap").slideUp("slow");
+});

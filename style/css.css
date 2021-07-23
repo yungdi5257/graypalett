@@ -7,12 +7,16 @@
   font-weight: normal;
   font-style: normal;
 }
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
 body {
   width: 100%;
   height: 100vh;
+  position: relative;
 }
 
 #index {
+  top: 0;
   width: 100%;
   height: 100%;
   background-image: url(../img/indexbg.png);
@@ -24,13 +28,11 @@ body {
 .grid {
   width: 1200px;
   margin: 0 auto;
-  background-color: tomato;
 }
 
 #index header {
   width: 100%;
   height: 80px;
-  background-color: aqua;
   display: flex;
   align-items: center;
 }
@@ -39,15 +41,30 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 18px;
 }
-/* #enter_wrap {
+
+#index main {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+#index main .mainimg {
+  width: 1000px;
+  margin: 100px auto 0;
+  overflow: hidden;
+}
+
+.enter-wrap {
   position: absolute;
+  top: 0;
   background-color: #222;
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
 
 .splash_index {
@@ -61,11 +78,9 @@ body {
 
 .typing-txt {
   display: none;
-} */
-/* 
+}
 .typing {
-position: absolute; */
-/* display: inline-block;
+  display: inline-block;
   color: #fff;
   animation-name: cursor;
   font-family: "NEXON Lv1 Gothic OTF";
@@ -89,10 +104,10 @@ position: absolute; */
 .enterimg {
   width: 140px;
   display: block;
-  opacity: 1;
-  transition: all 1s ease 3s;
+  opacity: 0;
+  transition: all 1s ease 1.5s;
 }
 
-.content-hidden .enterimg {
-  opacity: 0;
-} */
+.enterimg:hover {
+  cursor: pointer;
+}
