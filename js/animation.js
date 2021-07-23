@@ -20,3 +20,8 @@ $(window).ready(function () {
     }
   }
 });
+
+setTimeout(function () {
+  const enterImg = document.querySelector(".enterimg");
+  enterImg.style.opacity = 1;
+}, 4000);
