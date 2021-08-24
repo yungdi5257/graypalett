@@ -55,7 +55,7 @@ body {
   overflow: hidden;
 }
 
-.enter-wrap {
+/* .enter-wrap {
   position: absolute;
   top: 0;
   background-color: #222;
@@ -110,4 +110,4 @@ body {
 
 .enterimg:hover {
   cursor: pointer;
-}
+} */
